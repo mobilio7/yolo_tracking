@@ -329,7 +329,7 @@ class Evaluator:
 def parse_opt():
     parser = argparse.ArgumentParser()
     parser.add_argument('--yolo-model', type=str, default=WEIGHTS / 'yolov8n.pt', help='model.pt path(s)')
-    parser.add_argument('--reid-model', type=str, default=WEIGHTS / 'mobilenetv2_x1_4_dukemtmcreid.pt')
+    parser.add_argument('--reid-model', type=str, default=WEIGHTS / 'osnet_x0_25_dukemtmcreid.pt')
     parser.add_argument('--tracking-method', type=str, default='deepocsort', help='strongsort, ocsort')
     parser.add_argument('--name', default='exp', help='save results to project/name')
     parser.add_argument('--classes', nargs='+', type=str, default=['0'], help='filter by class: --classes 0, or --classes 0 2 3')
